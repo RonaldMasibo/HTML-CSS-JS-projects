@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="voting.css">
+
+    <title>Voting System</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Voting System</h1>
+        <div class="poll">
+            <h2>Which is the BIGGEST Football Club in the world??</h2>
+            <div class="choices">
+                <div class="choice">
+                    <input type="radio" name="poll" id="choice1">
+                    <label for="choice1">Manchester United</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="poll" id="choice2">
+                    <label for="choice2">Real Madrid</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="poll" id="choice3">
+                    <label for="choice3">Barcelona</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="poll" id="choice4">
+                    <label for="choice4">Chelsea</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="poll" id="choice5">
+                    <label for="choice5">Arsenal</label>
+                </div>
+            </div>
+            <button onclick="VotesCasted()">Vote</button>
+            <div id="TotalVotes"></div>
+        </div>
+    </div>
+
+    <script src="voting.js"></script>
+</body>
+</html>
