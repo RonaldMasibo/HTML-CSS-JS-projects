@@ -52,7 +52,7 @@ h2{
 }
 
 .choice{
-    margin: 10px 0 15px 0;
+    margin: 10px 0 10px 0;
 }
 
 input[type="radio"]{
@@ -91,4 +91,56 @@ button{
 
 button:hover{
     background-color: rgb(3, 73, 3);
+}
+
+
+
+
+/* The CSS styling below is done after coding in voting.js is completed */
+#TotalVotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ff1493;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+        /* The classes below were added through the JS file */
+.choice-result{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-text{
+    flex: 1;
+}
+
+.bar-container{
+    /* This is the container having the rods for measuring the length */
+    flex: 3;
+    background-color: rgb(255, 174, 0);
+    height: 5px;
+    border-radius: 4px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.bar{
+    /* These are the actual rods */
+    height: 100%;
+    background-color: rgb(218, 185, 185);
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.Percentage{
+    /* The percentage of each vote that determines length of the rod */
+    flex: 1;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ff1493;
 }
