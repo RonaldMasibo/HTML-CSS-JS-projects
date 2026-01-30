@@ -1,0 +1,46 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="sidenav.css">
+
+    <title>Side Navigation Bar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidenav" id="mySideNav">
+            <!-- Close Button -->
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+
+            <!-- Navigation links -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Use any element to open the side nav e.g button, link etc -->
+        <span onclick="openNav()">&#9776; Open</span>
+
+        <!--
+            Add all page content inside this div if you want the side nav to push page content to the right.
+            You can ignore it if you only want the side nav to sit on top of the page 
+        -->
+        <div id="main">
+            <p>
+                This statement will move to the right side when the side navbar is clicked.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quis ab, cupiditate fuga obcaecati illo accusamus totam, reprehenderit qui blanditiis laudantium quos expedita nemo, consequuntur nisi ratione reiciendis neque soluta.
+            </p>
+        </div>
+    </div>
+    
+    <!-- JS file -->
+    <script src="sidenav.js"></script>
+</body>
+</html>
