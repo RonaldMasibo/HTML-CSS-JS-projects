@@ -15,8 +15,11 @@
 <body>
     <div class="container">
         <div class="sidenav" id="mySideNav">
-            <!-- Close Button -->
-            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <!-- Close Buttons -->
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav1()">&times;</a>
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav2()">&times;</a>
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav3()">&times;</a>
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav4()">&times;</a>
 
             <!-- Navigation links -->
             <a href="#">Home</a>
@@ -26,7 +29,10 @@
         </div>
 
         <!-- Use any element to open the side nav e.g button, link etc -->
-        <span onclick="openNav()">&#9776; Open</span>
+        <span onclick="openNav1()">&#9776; Open1</span> <!-- This goes on top of the page -->
+        <br><br><br>
+
+        <span onclick="openNav2()">&#9776; Open2</span> <!-- This pushes the content of id="main" to the right -->
 
         <!--
             Add all page content inside this div if you want the side nav to push page content to the right.
@@ -34,9 +40,23 @@
         -->
         <div id="main">
             <p>
-                This statement will move to the right side when the side navbar is clicked.
+                This statement will move to the right side when the side navbar (Open2) is clicked.
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quis ab, cupiditate fuga obcaecati illo accusamus totam, reprehenderit qui blanditiis laudantium quos expedita nemo, consequuntur nisi ratione reiciendis neque soluta.
             </p>
+        </div>
+        <br><br><br>
+
+        <span onclick="openNav3()">&#9776; Open3</span> <!-- This pushes the content of id="main" to the right with some opacity -->
+        <div id="main2">
+            <p>This statement will move to the right side when the side navbar (Open3) is clicked but with some opacity.</p>
+        </div>
+        <br><br><br>
+
+
+        <!-- This slides in the side navigation menu from the left and covers the whole page (100% width) -->
+        <span onclick="openNav4()">&#9776; Open4</span>
+        <div id="main3">
+            <p>This will make the side navigation bar to cover the whole page (100% width) </p>
         </div>
     </div>
     
