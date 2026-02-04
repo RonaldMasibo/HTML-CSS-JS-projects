@@ -1,0 +1,47 @@
+
+
+.sidepanel{
+    width: 0; /* Will be changed using JS */
+    height: 300px;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    padding-top: 40px;
+    transition: 0.5s; /* 0.5s transition effect to slide in the sidepanel */
+}
+
+.sidepanel a{
+    color: white;
+    display: block;
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover{
+    color: rgb(161, 156, 156);
+}
+
+.sidepanel .closebtn{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+}
+
+.openbtn{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover{
+    background-color: gray;
+}
