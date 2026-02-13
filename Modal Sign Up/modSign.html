@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="modSign.css">
+
+    <title>Modal Sign Up Page</title>
+</head>
+<body>
+
+    <div class="SignUpContainer">
+        <h2>Modal Sign Up</h2>
+
+        <!-- Button to open the Modal Sign Up -->
+        <button onclick="openSignUp()" style="width: auto; background-color: rgb(4, 85, 4); color: white;
+        border-radius: 10px;">Sign Up</button>
+
+        <div class="modal" id="id01">
+            <!-- Close button -->
+            <span class="close" onclick="closeSignUp()" title="Close Modal">&times;</span>
+
+            <!-- Sign Up form -->
+            <form action="/action_page.php" class="modal-content">
+                <div class="container">
+                    <h1>Sign Up</h1>
+
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <br><br>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" name="psw" placeholder="Enter Password" required>
+                    <br><br>
+                    <label for="psw2"><b>Repeat Password</b></label>
+                    <input type="password" name="psw2" placeholder="Enter Password Again" required>
+                    <br><br>
+                    <label>
+                        <input type="checkbox" name="remember" checked="checked" style="margin-bottom: 15px;">
+                        Remember me
+                    </label>
+                    <br><br>
+                    <div class="clearfix">
+                        <!-- If you cancel, the modal sign up will close -->
+                        <button class="cancelbtn" onclick="closeSignUp()"><b>Cancel</b></button>
+                        <button type="submit" class="signUpbtn"><b>Sign Up</b></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS file -->
+    <script src="modSign.js"></script>
+</body>
+</html>
